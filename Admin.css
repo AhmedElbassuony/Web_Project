@@ -1,0 +1,126 @@
+:root {
+    --bg-primary: #f7f7f7;
+    --bg-secondary: #734060;
+    --bg-tertiary: #f1d095;
+    --bg-quaternary: #979797;
+    --bg-quinary: #f4f4f4ea;
+    --bg-black: black;
+    --card-height: 500px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Admin-header {
+    padding: 20px;
+    background-color: transparent;
+
+}
+  
+.Admin-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header .Admin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Admin-h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--bg-secondary);
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.874);
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.Admin-inputs {
+    margin: 1px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-quinary);
+    color: var(--bg-quaternary);
+    margin-bottom: 20px;
+}
+
+.Admin-inputs button {
+    width: 45%;
+    margin-left:calc(10% / 3);
+}
+
+button:hover {
+    background-color: #895275;
+    color: rgba(255, 255, 255, 0.874);
+}
+
+textarea:focus, input:focus {
+    outline: 2px solid var(--bg-secondary);
+    color: var(--bg-black);
+}
+
+.Admin-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Admin-recipe-card {
+    font-size: 20px;
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.Admin-recipe-card img {
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: 5px;
+}
+
+.Admin-recipe-card button {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    padding : 10px;
+}
+
+#Admin-card-edit {
+    margin-right: 5%;
+}

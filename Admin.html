@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Admin.css">
+        <title>Admin</title>
+    </head>
+    <body>
+        <header class="Admin-header">
+            <div class="Admin-container">
+                <div class="logo">
+                    <h3>Dish Hardy</h3>
+                    <img width="70" src="WhatsApp Image 2024-03-16 at 01.52.55_542175ec.jpg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <section class="Admin-section">
+            <div class="Admin-container">
+                <h2 class="Admin-h2">Add And Delete</h2>
+
+                <div class="Admin-actions">
+                    <button id="Admin-add">Add</button>
+                    <div class="Admin-inputs">
+                        <input type="text" id="Admin-recipe-name" name="Admin-recipe-name" placeholder="Recipe Name" required>
+                        <input type="url" id="Admin-image-source" name="Admin-image-source" placeholder="URL" required>
+                        <input type="text" id="Admin-image-origin" name="Admin-image-origin" placeholder="Origin" required>
+                        <textarea id="Admin-recipe-description" name="Admin-recipe-description" placeholder="Description" required></textarea>
+                        <textarea id="Admin-recipe-ingrediants" name="Admin-recipe-ingrediants" placeholder="Ingredients" required></textarea>
+                        <div class="Admin-inputs-buttons">
+                            <button id="Admin-inputs-confirm">Add</button>
+                            <button id="Admin-inputs-confirm">Edit</button>
+                            <button id="Admin-inputs-cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <!-- <button id="Admin-delete-all">Delete All</button> -->
+                </div>
+
+                <div class="Admin-recipes">
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit" class="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit" class="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+    </body>
+</html>
