@@ -45,11 +45,17 @@ header .Admin-container {
 
 .Admin-h2 {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: var(--bg-secondary);
     text-align: center;
 }
 
+/* .Admin-message {
+    display: none;
+    color: red;
+    text-align: center;
+    background-color: rgb(255 0 0 /50%);
+} */
 
 button {
     width: 100%;
@@ -69,6 +75,11 @@ button {
     margin: 1px;
 }
 
+.Admin-inputs label, p {
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+}
 
 input, textarea {
     width: 100%;
@@ -77,13 +88,24 @@ input, textarea {
     border-radius: 5px;
     border: none;
     background-color: var(--bg-quinary);
-    color: var(--bg-quaternary);
     margin-bottom: 20px;
 }
 
-.Admin-inputs button {
-    width: 45%;
-    margin-left:calc(10% / 3);
+
+
+select {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-quinary);
+    font-size: 20px;
+    color: #734060;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
 button:hover {
@@ -91,7 +113,7 @@ button:hover {
     color: rgba(255, 255, 255, 0.874);
 }
 
-textarea:focus, input:focus {
+textarea:focus, input[type="text"]:focus, select:focus {
     outline: 2px solid var(--bg-secondary);
     color: var(--bg-black);
 }
@@ -123,4 +145,8 @@ textarea:focus, input:focus {
 
 #Admin-card-edit {
     margin-right: 5%;
+}
+
+#Admin-delete-all {
+    display: none;
 }
