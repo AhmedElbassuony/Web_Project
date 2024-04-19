@@ -5,7 +5,7 @@
     --bg-quaternary: #979797;
     --bg-quinary: #f4f4f4ea;
     --bg-black: black;
-    --card-height: 500px;
+    --card-height: 300px;
     --card-width: calc(var(--card-height) / 1.5);
 }
 
